@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+var getTimeNow = () => {
+	var obj = new Date();
+	var tim = obj.getHours()+":"+obj.getMinutes()+":"+obj.getSeconds();
+	return tim;
+};
+
 const App = () => {
 	return (
 		<div>
-			<label for="name" class="label">Enter name:</label>
-			<input id="name" type="text" />
-			<button style={{backgroundColor:"red",color:'white'}}>Submit</button> 
+			<div>Current Time</div>
+			{getTimeNow()}
 		</div>
 		)
 }
