@@ -1,20 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CommentDetails from './commentDetails';
-import ApproveCard from './ApprovalCard';
+import Placeholder from './placeholder';
 
 const App = () => {
 	return (
-		<div className="ui container comments">
-			<ApproveCard>
-				<CommentDetails author="Raja" time="Yesterday 3:26pm"/>
-			</ApproveCard>
-			<ApproveCard>
-				<CommentDetails author="Manas" time="Today at 6:00pm"/>
-			</ApproveCard>
-			<ApproveCard>
-				<CommentDetails author="Martin" time="Tuesday at 12:04am"/>
-			</ApproveCard>
+		<div>
+			<Placeholder>
+				<div className="ui icon header">
+					<i className="pdf file outline icon"></i>
+					No documents are listed for this customer.
+				</div>
+				<div className="ui primary button">Add Document</div>
+			</Placeholder>
+
+			<Placeholder>
+				<h4 className="ui header">For your information</h4>
+				<p>
+					Quantum mechanics is the branch of mechanics that deals with the mathematical 
+					description of the motion and interaction of subatomic particles, incorporating 
+					the concepts of quantization of energy, wave–particle duality, the uncertainty principle,
+					 and the correspondence principle.
+				</p>
+			</Placeholder>
+			<Placeholder>
+				<div className="ui icon header">
+					<i className="pdf file outline icon"></i>
+					No documents are listed for this customer.
+				</div>
+				<div className="ui primary button">Add Document</div>
+				<h4 className="ui header">For your information</h4>
+				<p>
+					Quantum mechanics is the branch of mechanics that deals with the mathematical 
+					description of the motion and interaction of subatomic particles, incorporating 
+					the concepts of quantization of energy, wave–particle duality, the uncertainty principle,
+					 and the correspondence principle.
+				</p>
+			</Placeholder>
 		</div>
 	);
 }
