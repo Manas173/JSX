@@ -1,58 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import faker from 'faker';
-import commentDetails from './commentDetails';
+import CommentDetails from './commentDetails';
+import ApproveCard from './ApprovalCard';
 
 const App = () => {
 	return (
 		<div className="ui container comments">
-			<div className="comment">
-				<a href="/" className="avatar">
-					<img alt="avatar" src={faker.image.avatar()} /> </a>
-				<div className="content">
-					<a href="/" className="author">
-					Sam
-					</a>
-					<div className="metadata">
-						<span className="date">Today at 6:00 pm</span>
-					</div>
-					<div className="text">
-						Nice blog post!
-					</div>
-				</div>
-			</div>
-
-			<div className="comment">
-				<a href="/" className="avatar">
-					<img alt="avatar" src={faker.image.avatar()} /> </a>
-				<div className="content">
-					<a href="/" className="author">
-					Manas
-					</a>
-					<div className="metadata">
-						<span className="date">Today at 6:00 pm</span>
-					</div>
-					<div className="text">
-						Nice blog post!
-					</div>
-				</div>
-			</div>
-
-			<div className="comment">
-				<a href="/" className="avatar">
-					<img alt="avatar" src={faker.image.avatar()} /> </a>
-				<div className="content">
-					<a href="/" className="author">
-					Raja
-					</a>
-					<div className="metadata">
-						<span className="date">Today at 6:00 pm</span>
-					</div>
-					<div className="text">
-						Nice blog post!
-					</div>
-				</div>
-			</div>
+			<ApproveCard>
+				<CommentDetails author="Raja" time="Yesterday 3:26pm"/>
+			</ApproveCard>
+			<ApproveCard>
+				<CommentDetails author="Manas" time="Today at 6:00pm"/>
+			</ApproveCard>
+			<ApproveCard>
+				<CommentDetails author="Martin" time="Tuesday at 12:04am"/>
+			</ApproveCard>
 		</div>
 	);
 }
