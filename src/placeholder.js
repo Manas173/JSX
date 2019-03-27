@@ -9,4 +9,12 @@ const Placeholder = (props) => {
 	);
 }
 
+const Placeholder = (props) => {
+	return (
+		<div>
+			{props.children}
+		</div>
+	);
+} 
+
 export default Placeholder;

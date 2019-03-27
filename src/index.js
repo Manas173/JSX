@@ -1,6 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Placeholder from './placeholder';
+// import Placeholder from './placeholder';
+
+const Placeholder = (props) => {
+	return (
+		<div className="ui placeholder segment">
+			{props.children}
+		</div>
+	);
+}
 
 const App = () => {
 	return (
@@ -39,5 +47,6 @@ const App = () => {
 		</div>
 	);
 }
+
 
 ReactDOM.render(<App />,document.querySelector('#root'));
